@@ -1,3 +1,6 @@
+body {
+  background-color: #0c0028;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,95 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1,
+h2,
+h3,
+span,
+::placeholder,
+input,
+a {
+  font-family: "Teko", sans-serif;
+  letter-spacing: 1px;
+}
+
+.my_form_content h1 {
+  color: white;
+  font-size: 40px;
+}
+.my_form_content form input.form-control {
+  background-color: transparent;
+  border: 1px solid #fff;
+  height: 45px;
+  border-radius: 100px;
+  padding: 3px 25px 0px 25px;
+  font-size: 16px;
+  color: white;
+}
+.my_form_content form input.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.my_form_content form input.form-control::placeholder {
+  color: white;
+}
+.Loading h2 {
+  color: white;
+  font-size: 35px;
+  padding-top: 50px;
+}
+.card_custom .card {
+  background-color: #bb9aff;
+  height: auto;
+  text-align: left;
+  padding: 25px 5px 20px 25px;
+}
+.tags span {
+  background: #0c0028;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  margin-right: 5px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.tags,
+.links {
+  margin-bottom: 10px;
+}
+.avatars .avatar_item {
+  height: 40px;
+  object-fit: cover;
+}
+.avatars .avatar_item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+.my_list ul {
+  padding: 0;
+}
+.my_list ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.my_buttons button {
+  background-color: #bb9aff !important;
+  border-color: #bb9aff !important;
+  width: 120px;
+  border-radius: 100px;
+  font-weight: 500;
+  color: #000;
+  font-size: 16px;
+}
+.my_buttons button:focus {
+  outline: none;
+  box-shadow: none;
 }
