@@ -84,17 +84,23 @@ a {
 }
 .tags span {
   background: #0c0028;
-  padding: 3px 5px;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 3px 15px;
+  border-radius: 7px;
+  font-size: 18px;
   color: white;
   margin-right: 5px;
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 25px;
 }
-
 .links a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
+  background: #0c0028;
+  padding: 6px 7px;
+  border-radius: 7px;
+  line-height: 0;
 }
 .tags,
 .links {
@@ -129,4 +135,37 @@ a {
 .my_buttons button:focus {
   outline: none;
   box-shadow: none;
+}
+.tags span h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.tags h2 {
+  display: inline-block;
+  font-size: 20px;
+  color: #0c0028;
+  position: relative;
+  top: -9px;
+  left: -7px;
+}
+.links span {
+  font-size: 20px;
+  color: #0c0028;
+  position: relative;
+  left: -8px;
+  top: 2px;
+}
+
+/* Media Query */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .tags span h3,
+  .tags span {
+    font-size: 13px;
+  }
+  .links a {
+    font-size: 14px;
+  }
+  .tags span {
+    padding: 3px 12px;
+  }
 }
