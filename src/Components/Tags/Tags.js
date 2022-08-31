@@ -9,7 +9,7 @@ const Tags = ({ files }) => {
       {Object.keys(files).map((key) => {
         return (
           <>
-            <span>
+            <span key={files[key].filename}>
               {files[key].language}
               <h3>{files[key].filename}</h3>
             </span>

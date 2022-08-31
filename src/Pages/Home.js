@@ -20,7 +20,6 @@ const Home = () => {
         `https://api.github.com/users/${value}/gists`,
         { params: { per_page: 5, page } }
       );
-
       setLoading(false);
       setMyData(data);
     } catch (error) {
